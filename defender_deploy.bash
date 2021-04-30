@@ -2,9 +2,11 @@
 #!/bin/bash
 # Author Kyle Butler Prisma Cloud Channel SE
 # Written bash for portability
+# Tested with Prisma Cloud Compute 21.04.412 on April 30th 2021
 # Set the following variables to the correct values short description before each value
 
-# This needs to be the full console version Example: 21.04.139
+
+# This needs to be the full console version Example: 21.04.412
 pcc_console_version=<FULL_CONSOLE_VERSION>
 # the hostname of the console or IP Address
 pcc_hostname=<IP_ADDRESS_OR_HOSTNAME>
