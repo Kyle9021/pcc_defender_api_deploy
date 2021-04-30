@@ -1,7 +1,8 @@
 
 #!/bin/bash
-
-## Set the following variables to the correct values short description before each value
+# Author Kyle Butler Prisma Cloud Channel SE
+# Written bash for portability
+# Set the following variables to the correct values short description before each value
 
 # the hostname of the console or IP Address
 pcc_hostname=<IP_ADDRESS_OR_HOSTNAME>
