@@ -27,6 +27,13 @@ pcc_defender_deploy_type=<SET_THIS_TO_ONE_OF_THE_OPTIONS_ABOVE>
 pcc_api_var="{\"username\":\""${pcc_cli_user}"\", \"password\":\""${pcc_cli_user_password}"\"}"
 pcc_api_port_var="{\"port\":"${pcc_websocket_port}"}"
 
+# Check to ensure jq is installed
+if ! command -v jq &> /dev/null
+then
+    echo "jq could not be found please install it first using 'sudo apt install jq'"
+    exit
+fi
+
 # This is the part which creates the authorization token. One might consider separating this part in a different script and exporting the variable for more robust security
 pcc_api_token=$(curl -k -H "Content-Type: application/json" -d "${pcc_api_var}" https://"${pcc_hostname}":"${pcc_mgmt_port}"/api/v1/authenticate | jq -r '.token')
 
