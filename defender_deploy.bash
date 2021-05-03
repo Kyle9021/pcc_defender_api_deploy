@@ -4,6 +4,7 @@
 # Written bash for portability
 # Tested with Prisma Cloud Compute 21.04.412 on April 30th 2021
 # Set the following variables to the correct values short description before each value
+# This script requires hardening for production environments. For example all the curl commands have -k to avoid issues with improperly applied certs. 
 
 
 # This needs to be the full console version Example: 21.04.412
