@@ -5,6 +5,10 @@
 * You're able to reach your PCC console from your ubuntu 20.04 machine
 * You would know how to harden this process if working in a production environment.
 
+* If you do decide to keep the keys/password/username in this script, then it's critical you:
+  
+   * Add it to your `.gitignore` (if using git) file and `chmod 700 defender_deplooy.bash` between steps 2 and 3 below so that others can't read, write, or excute it.
+
 ## Instructions
 * Step 1: `git clone https://github.com/Kyle9021/pcc_defender_api_deploy`
 * Step 2: `cd pcc_defender_api_deploy/`
