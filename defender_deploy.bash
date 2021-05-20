@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # Author Kyle Butler Prisma Cloud Channel SE
 # Written bash for portability
